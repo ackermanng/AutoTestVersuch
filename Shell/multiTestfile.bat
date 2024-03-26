@@ -22,6 +22,6 @@ FOR /F "tokens=*" %%i IN (Templates\File1.txt) DO (
 
 echo 3. starte ein 2. Script
 
-call Programme\Testprogramm.bat > \log\log.txt
+call Programme\Testprogramm.bat 
 
 exit 0
