@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="myhost" id="0" name="neu test erstellen" package="com.sample.test" skipped="0" tests="1" time="0.063" timestamp="2015-01-13T07:23:07">
+  <testsuite errors="0" failures="0" hostname="myhost" id="0" name="neu test erstellen" package="com.sample.test (1)" skipped="0" tests="1" time="0.063" timestamp="2024-03-26T17:23:07">
       <properties>
       </properties>
       <testcase classname="com.sample.test.TestMessage" name="AutoTest" time="0.002" />
