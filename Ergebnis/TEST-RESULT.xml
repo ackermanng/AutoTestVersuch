@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" id="37" name="Was neues" skipped="0" tests="2" time="0.063" timestamp="2024-03-26T17:23:07">
+  <testsuite errors="0" failures="1" id="37" name="Was neues" tests="2" time="0.063" timestamp="2024-03-26T17:23:07">
       <properties>
       </properties>
       <testcase name="automatisiert Test 1" time="0.002" />
