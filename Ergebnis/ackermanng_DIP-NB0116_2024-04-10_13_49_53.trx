@@ -13,7 +13,10 @@
       </Output>
     </UnitTestResult>
     <UnitTestResult executionId="23505ffc-b26f-4c62-a423-13a99ba271e4" testId="2372b686-1875-100c-9f97-b3ef45e8176d" testName="Test1" computerName="SPRDMULTTS-0691" duration="00:00:04.8098388" startTime="2024-04-10T15:22:42.8969918+01:00" endTime="2024-04-10T15:22:47.7068306+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23505ffc-b26f-4c62-a423-13a99ba271e4">
-    </UnitTestResult>
+<Output>
+Alles OK
+</Output>
+</UnitTestResult>
   </Results>
   <TestDefinitions>
     <UnitTest name="Testwrong" storage="c:\azure\agent\_work\3\s\automated\besipiel_projekt\besipiel_projekt.pjs" id="226efb95-5b56-4340-afd7-950ffb6a5b22">
