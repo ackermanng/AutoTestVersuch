@@ -11,11 +11,14 @@
           <Message>The property checkpoint failed, because WndCaption does not equal (case-sensitive) "88". See Details for additional information.</Message>
         </ErrorInfo>
       </Output>
+      <ResultFiles>
+        <ResultFile path="Testwrong_log@SPRDMULTTS-0691_2024-03-28 15_22_47.mht" />
+      </ResultFiles>
     </UnitTestResult>
     <UnitTestResult executionId="23505ffc-b26f-4c62-a423-13a99ba271e4" testId="2372b686-1875-100c-9f97-b3ef45e8176d" testName="Test1" computerName="SPRDMULTTS-0691" duration="00:00:04.8098388" startTime="2024-04-10T15:22:42.8969918+01:00" endTime="2024-04-10T15:22:47.7068306+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23505ffc-b26f-4c62-a423-13a99ba271e4">
-<Output>
-Alles OK
-</Output>
+      <ResultFiles>
+        <ResultFile path="SPRDMULTTS-0691\Test1_log@SPRDMULTTS-0691_2024-03-28 15_22_42.mht" />
+      </ResultFiles>
 </UnitTestResult>
   </Results>
   <TestDefinitions>
