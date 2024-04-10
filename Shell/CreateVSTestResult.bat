@@ -1,6 +1,6 @@
 @echo off
 
-del C:\agent\_work\_temp\TestResults\*.*
+mkdir C:\agent\_work\_temp\TestResults
 
 mkdir C:\agent\_work\_temp\TestResults\ackermanng_DIP-NB0116_2024-04-10_13_49_53
 mkdir C:\agent\_work\_temp\TestResults\ackermanng_DIP-NB0116_2024-04-10_13_49_53\In
