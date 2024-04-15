@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{8B2776F5-5983-4A56-9E06-DD2522568EE1}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{415637B5-E513-44CE-83FD-DA4463F770AA}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="BrowserWindow" Key="{5A17FAEC-F90E-45D8-A1CD-4F890F557C78}">
+								<Image FileName="256377099" Left="0" Top="0" Right="1438" Bottom="1001" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="0" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="page" Key="{F5F8E5D9-DBF1-418A-BCFA-C87CFCD0B4F6}">
+								<Image FileName="-821673840" Left="8" Top="88" Right="1430" Bottom="993" />
+								<TypeInfo Item0="{47898965-6ACF-49F2-92D5-0331FB19CB0E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="chrome" Key="{A9139273-18D6-4B65-86C3-6E48147C9492}">
+						<TypeInfo Item0="{EA14157E-1492-40AC-8DC0-F4E22B84A976}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="chrome" />
+							</Property>
+							<Property Name="Index">
+								<Value Value="1" Type="0" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="pageHalloGoogleSuche" Key="{56246BE5-5289-465C-92B5-775DE76D1CE0}">
+								<Image FileName="508705550" Left="8" Top="88" Right="1430" Bottom="993" />
+								<TypeInfo Item0="{23B6B07F-71C4-4CFD-A2ED-FD9C4E53A389}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.google.com/search*" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnodeHalLo" Key="{365D61CA-56EA-4594-95BE-CEAB59669A0E}">
+										<Image FileName="508705550" Left="236" Top="346" Right="302" Bottom="381" />
+										<TypeInfo Item0="{DDA5DD58-5AEE-4C6E-8C60-4968768F6B30}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;hal·lo&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;tsuid_49&apos;]//div[3]//div//div//span" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]//div[3]//div[3]//span" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{415637B5-E513-44CE-83FD-DA4463F770AA}">
+			<Child Name="BrowserWindow" Owner="{5A17FAEC-F90E-45D8-A1CD-4F890F557C78}" />
+			<Child Name="page" Owner="{F5F8E5D9-DBF1-418A-BCFA-C87CFCD0B4F6}" />
+		</Child>
+		<Child Name="chrome" Owner="{A9139273-18D6-4B65-86C3-6E48147C9492}">
+			<Child Name="pageHalloGoogleSuche" Owner="{56246BE5-5289-465C-92B5-775DE76D1CE0}">
+				<Child Name="textnodeHalLo" Owner="{365D61CA-56EA-4594-95BE-CEAB59669A0E}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>
