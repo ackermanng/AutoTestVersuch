@@ -3,13 +3,10 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-trigger:
- - no
-
 pool: LocalServer
 
 steps:
-- task: Maven@3
+- task: Maven@4
   displayName: Maven CrunchifyJunitTest
   inputs:
     mavenPomFile: 'CrunchifyJunitTest/pom.xml'
