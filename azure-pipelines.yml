@@ -1,0 +1,35 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@3
+  displayName: Maven CrunchifyJunitTest
+  inputs:
+    mavenPomFile: 'CrunchifyJunitTest/pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    mavenVersionOption: 'Default'
+    mavenOptions: '-Xmx3072m'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+
+- task: JavaTestBridgeForTestPlan@1
+  displayName: JavaTestBridgeForTestPlan
+  inputs:
+    testResultPath: 'CrunchifyJunitTest/target/surefire-reports'
+    outputFolder: 'CrunchifyJunitTest/target'
+    inputType: 'string'
+    jsonMapping: '[{''workItemID'':9858,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
+    username: 'GIT_PAT'
+    password: 'spxa5hec2mcjuf2xr6k3ezohnlcrq7y37dro6v7bj6exxtgmp2ga'
