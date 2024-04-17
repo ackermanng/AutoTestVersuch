@@ -6,6 +6,9 @@
 pool: LocalServer
 
 steps:
+- task: MavenAuthenticate@0
+  inputs:
+    artifactsFeeds: 'SPSGlobal'
 - task: Maven@4
   displayName: Maven CrunchifyJunitTest
   inputs:
