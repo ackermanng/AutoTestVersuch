@@ -33,14 +33,14 @@ steps:
 #    testResultsFormat: 'JUnit'
 #    testResultsFiles: 'CrunchifyJunitTest/target/surefire-reports/TEST-*.xml'
 
-- task: JavaTestBridgeForTestPlan@1
-  inputs:
-    testResultPath: 'CrunchifyJunitTest/target/surefire-reports'
-    outputFolder: 'CrunchifyJunitTest/target'
-    inputType: 'string'
-    jsonMapping: '[{''workItemID'':26,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
-    username: 'VSTToken'
-    password: 's4x5oobh2lr374zghav7n2pequfvrtpkbtrkjxkr425tf3eekzuq'
+#- task: JavaTestBridgeForTestPlan@1
+#  inputs:
+#    testResultPath: 'CrunchifyJunitTest/target/surefire-reports'
+#    outputFolder: 'CrunchifyJunitTest/target'
+#    inputType: 'string'
+#    jsonMapping: '[{''workItemID'':26,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
+#    username: 'VSTToken'
+#    password: 's4x5oobh2lr374zghav7n2pequfvrtpkbtrkjxkr425tf3eekzuq'
 
 
 - task: VSTest@3
