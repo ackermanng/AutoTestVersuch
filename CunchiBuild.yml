@@ -11,6 +11,12 @@ pool: LocalServer
 #  vmImage: windows-latest
 
 steps:
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x86'
+    jdkSourceOption: 'PreInstalled'
+
 - task: VisualStudioTestPlatformInstaller@1
   inputs:
     packageFeedSelector: 'nugetOrg'
