@@ -6,8 +6,9 @@
 trigger:
 - main
 
-pool:
-  vmImage: windows-latest
+pool: LocalServer
+
+#  vmImage: windows-latest
 
 steps:
 - task: VisualStudioTestPlatformInstaller@1
