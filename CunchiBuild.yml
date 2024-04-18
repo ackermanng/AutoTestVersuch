@@ -15,40 +15,39 @@ steps:
     packageFeedSelector: 'nugetOrg'
     versionSelector: 'latestPreRelease'
 
-#- task: Maven@3
-#  inputs:
-#    mavenPomFile: 'CrunchifyJunitTest/pom.xml'
-#    publishJUnitResults: true
-#    testResultsFiles: 'CrunchifyJunitTest/target/surefire-reports/TEST-*.xml'
-#    javaHomeOption: 'JDKVersion'
-#    jdkVersionOption: '1.8'
-#    mavenVersionOption: 'Default'
-#    mavenOptions: '-Xmx3072m'
-#    mavenAuthenticateFeed: false
-#    effectivePomSkip: false
-#    sonarQubeRunAnalysis: false
-
-#- task: PublishTestResults@2
-#  inputs:
-#    testResultsFormat: 'JUnit'
-#    testResultsFiles: 'CrunchifyJunitTest/target/surefire-reports/TEST-*.xml'
-
-#- task: JavaTestBridgeForTestPlan@1
-#  inputs:
-#    testResultPath: 'CrunchifyJunitTest/target/surefire-reports'
-#    outputFolder: 'CrunchifyJunitTest/target'
-#    inputType: 'string'
-#    jsonMapping: '[{''workItemID'':26,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
-#    username: 'VSTToken'
-#    password: 's4x5oobh2lr374zghav7n2pequfvrtpkbtrkjxkr425tf3eekzuq'
-
-
-- task: VSTest@3
+- task: Maven@3
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: '**\*AutomatedTestAssembly.dll'
-    searchFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target'
-    resultsFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target\surefire-reports'
-    vsTestVersion: 'toolsInstaller'
-    runTestsInIsolation: true
-  
+    mavenPomFile: 'CrunchifyJunitTest/pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: 'CrunchifyJunitTest/target/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    mavenVersionOption: 'Default'
+    mavenOptions: '-Xmx3072m'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'CrunchifyJunitTest/target/surefire-reports/TEST-*.xml'
+
+- task: JavaTestBridgeForTestPlan@1
+  inputs:
+    testResultPath: 'CrunchifyJunitTest/target/surefire-reports'
+    outputFolder: 'CrunchifyJunitTest/target'
+    inputType: 'string'
+    jsonMapping: '[{''workItemID'':26,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
+#    username: 'VSTToken'
+#   password: 's4x5oobh2lr374zghav7n2pequfvrtpkbtrkjxkr425tf3eekzuq'
+
+
+#- task: VSTest@3
+#  inputs:
+#    testSelector: 'testAssemblies'
+#    testAssemblyVer2: '**\*AutomatedTestAssembly.dll'
+#    searchFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target'
+#    resultsFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target\surefire-reports'
+#    vsTestVersion: 'toolsInstaller'
+#    runTestsInIsolation: true
