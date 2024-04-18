@@ -46,12 +46,9 @@ steps:
 - task: VSTest@3
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
-      !**\*AutomatedTestAssembly.dll
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    testAssemblyVer2: '**\*AutomatedTestAssembly.dll'
+    searchFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target'
+    resultsFolder: '$(System.DefaultWorkingDirectory)\CrunchifyJunitTest\target\surefire-reports'
     vsTestVersion: 'toolsInstaller'
     runTestsInIsolation: true
   
