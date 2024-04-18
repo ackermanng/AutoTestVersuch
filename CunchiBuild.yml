@@ -39,8 +39,8 @@ steps:
     outputFolder: 'CrunchifyJunitTest/target'
     inputType: 'string'
     jsonMapping: '[{''workItemID'':26,''methodName'':''testingHelloWorld'',''className'':''com.crunchify.junit.CrunchifyJunitTest''}]'
-    username: 'TerminaServer'
-    password: 'gelpfta5lkobs6umjbxpvllr45gturvhdo5ylpauwpkspf63c6la'
+    username: 'gerhard.ackermann'
+    password: 'suuc4rffxfxgstmr6xerjwlbpypkrangaeaorh3pi6sgtsk63osq'
 
 - task: VSTest@3
   inputs:
